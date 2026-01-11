@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Muhammad Arif </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Audiowide|Baloo+Tamma|Kelly+Slab|Neucha|Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/style.css" type="text/css" rel="stylesheet" />
+    <script src="js/formValidate.js" type="text/javascript"></script>
+    <script src="js/main.js" type="text/javascript"></script>
+  </head>
+  <style>
+    /*Internal CSS*/
+    #time {
+      float: right;
+      font-size: 30px;
+      margin: 10px;
+      font-family: "kelly slab";
+      margin-right: 20px;
+      font-weight: bold;
+    }
+    @media only screen and (max-width: 800px) {
+      #greet {
+        visibility: hidden;
+      }
+      #time {
+        font-family: "kelly slab";
+      }
+    }
+    #greet {
+      font-size: 25px;
+      font-family: "Audiowide";
+      position: absolute;
+      left: 50%;
+      top: 2%;
+      font-weight: bold;
+    }
+
+    #center {
+      text-align: center;
+      padding: 30px;
+    }
+  </style>
+  <body>
+    <!--Header Section-->
+    <div class="header">
+      <!--CSS sebaris di bawah Baris-->
+      <span
+        style="font-size: 40px; cursor: pointer; margin-left: 10px"
+        onclick="openNav()"
+        id="open"
+        >&#9776;
+      </span>
+      <a href="home.html"><img src="images/Iconslogo/perlogo.png" alt="Logo pribadi" /></a>
+      <span class="greeting" id="greet"></span>
+      <span id="time"></span>
+    </div>
+
+    <!--Navigation Section-->
+    <div id="myNav" class="navbar">
+      <a
+        href="javascript:void(0)"
+        class="closebtn"
+        onclick="closeNav()"
+        id="close"
+        >&times;</a
+      >
+      <div class="navbar-content">
+        <a href="#home" id="active">Home</a>
+        <a href="resume.html">about me</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+<!--Banner Section-->
+<div class="banner-area" id="home">
+  <video autoplay muted loop playsinline class="banner-video">
+    <source src="Cyberpunk.mp4" type="video/mp4">
+  </video>
+  <div class="title-image">
+  </div>
+  <div class="title-name">
+        <p class="name">
+          <span id="iden-name"></span><br />
+          <span class="subtitle1" id="subtitle1">selamat datang</span>
+          <span class="subtitle2" id="subtitle2"
+            >jangan lupa &nbsp; rating 🌟5</span
+          >
+        </p>
+      </div>
+    </div>
+    <!--Services Section-->
+    <div class="service-area" id="services">
+      <div class="text-part">
+        <h1 id="center" >ada yang saya bisa bantu?😎😎</h1>
+        <div class="container">
+          <div class="box">
+            <div class="icon"></div>
+            <div class="content">
+              <h3>Website Development</h3>
+              <p>
+                Website development adalah proses pembangunan, pengembangan, dan pemeliharaan situs web. Proses ini dilakukan untuk membuat situs web yang menarik, fungsional, dan dapat memenuhi kebutuhan pengguna. 
+
+              </p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="icon"></div>
+            <div class="content">
+              <h3>Mobile App Development</h3>
+              <p>
+                Mobile app development bertujuan untuk menyediakan solusi perangkat lunak mobile yang dapat memenuhi kebutuhan serta memudahkan pengguna di kehidupan sehari-harinya dengan menyediakan akses yang mudah dan cepat ke informasi, layanan, ataupun fitur tertentu
+              </p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="icon"></div>
+            <div class="content">
+              <h3>Domain & Hosting</h3>
+              <p>
+                Domain dan hosting adalah dua hal yang berbeda, namun sama-sama penting untuk membangun situs web. Domain merupakan alamat website, sedangkan hosting adalah tempat untuk menyimpan file website
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+ 
+
+    <!--About Section-->
+    <div class="about-area" id="about">
+      <div class="text-part-abt">
+        <h1 style="text-align: center; padding-bottom: 10px">
+          <span
+            style="font-size: 80px; text-decoration: none;
+              border-bottom: 2px solid rgb(230, 173, 30);
+             color: rgb(230, 173, 30);
+            "
+            >A</span
+          >bout Me
+        </h1>
+        <div class="about">
+          <div class="abt-content">
+            <div class="rem-part">
+              <div class="social-media">
+                <div class="icons">
+                  <a
+                    href="https://www.facebook.com/rrqarif"
+                    target="
+                            "
+                    ><img src="images/Iconslogo/facebook.png"
+                  /></a>
+                  <a href="https://twitter.com/arif_rrq39737" target="_blank"
+                    ><img src="images/Iconslogo/twitter.png"
+                  /></a>
+                  <a
+                    href="https://www.instagram.com/thestory24.id/"
+                    target="_blank"
+                    ><img src="images/Iconslogo/instagram.png"
+                  /></a>
+                </div>
+              </div>
+              <div class="left-part">
+                <span class="h2"
+                  >I'm
+                  <span style="color: orangered">MUHAMMAD ARIF</span></span
+                ><br />
+                <span class="h3">3m:manja,mahal,mewah</span>
+                <hr />
+                <p style="font-size: 25px">
+                  Halo, saya seorang siswa di SMKN 1 Rasau Jaya, jurusan Teknik Komputer dan Jaringan (TKJ). Saya tertarik pada dunia teknologi, terutama dalam bidang jaringan dan pemrograman. Di luar sekolah, saya aktif dalam komunitas gaming dan berbagi konten seputar Mobile Legends di TikTok. Saya selalu mencari kesempatan untuk belajar hal-hal baru dan mengasah keterampilan saya dalam teknologi.
+                  <span style="font-size: 25px; color: chocolate"
+                    ><b style="text-decoration: underline">tekan tombol di bawah ini untuk lebih lanjut👇🏻</b></span
+              </div>
+              <div class="abt-btn">
+                <button
+                  type="button"
+                  onclick="window.location.href='resume.html';"
+                  class="button1"
+                >
+                  View My about
+                </button>
+                <button
+                  type="button"
+                  onclick="window.location.href='#contact';"
+                  class="button2"
+                >
+                  hubungi saya 
+                </button>
+              </div>
+            </div>
+            <div class="img-part">
+              <div class="img"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+        <!--form contact -->
+    <div class="divider"></div>
+    <div class="contact-area" id="contact">
+      <div class="text-part">
+        <h1>Contact Me</h1>
+        <div class="cont-form">
+          <form onsubmit="return validateForm()">
+            <input type="text" id="name" placeholder="Name *" /><br />
+            <input type="text" id="email" placeholder="Email *" />
+            <input type="text" id="subject" placeholder="Subject *" /><br />
+            <input
+              type="text"
+              placeholder="Phone No (Optional)"
+              id="phone"
+            /><br />
+            <textarea id="message" placeholder="Message *"></textarea><br />
+            <button type="submit" id="btn-submit">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!--This is for playing alert sound-->
+    <audio id="alert" src="sound/alerts.mp3" preload="auto"></audio>
+    <audio id="success" src="sound/success.mp3" preload="auto"></audio>
+
+    <div class="cta hide" id="goup">
+      <a href="#home"><img src="images/Iconslogo/arrup.png" /></a>
+    </div>
+
+    <!--Copyright Information-->
+    <div class="copyright">
+      <p>&copy; 2024 Muhammad Arif. Semua hak cipta dilindungi.</p>
+    </div> 
+    <script>
+      //handles goup button
+      myID = document.getElementById("goup");
+
+      var myScrollFunc = function () {
+        var y = window.scrollY;
+        if (y >= 800) {
+          myID.className = "cta show";
+        } else {
+          myID.className = "cta hide";
+        }
+      };
+      window.addEventListener("scroll", myScrollFunc);
+
+      //The below line dynamically change the name in banner area.
+      document.getElementById("iden-name").innerHTML = "Muhammad Arif";
+     
+      window.onscroll = function () {
+        stickFunction();
+      };
+      var navbar = document.getElementById("myNav");
+      var sticky = navbar.offsetTop;
+
+      function stickFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky");
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      }
+    </script>
+  </body>
+</html>

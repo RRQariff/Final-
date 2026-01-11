@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en"
+    <head>
+      <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link rel="shortcut icon" href="images/Iconslogo/rsz_logo_1-150x150.png" />
+        <link href="css/blog.css" type="text/css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Audiowide|Baloo+Tamma|Kelly+Slab|Neucha|Righteous&display=swap" rel="stylesheet">
+    <style>
+        .toggle{
+            height: 0px;
+            background-color: #2e2e2e;
+        }
+        #open{
+            color: aliceblue;
+        }
+        @media only screen and (max-width: 800px){
+            .toggle{
+                height: 50px;
+            }
+            
+        }
+    </style>
+    </head>
+    <body>
+        <div class="toggle">
+            <span style="font-size:40px;cursor:pointer;margin-left: 10px;" onclick="openNav()" id="open">&#9776; </span>
+        </div>
+       <div id="myNav" class="navbar" style="background-color: rgba(0,0,0,0.9);">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" id="close">&times;</a>
+          <div class="navbar-content">
+            <a href="home.html">Home</a>
+            <a href="resume.html">about me</a>
+            <a href="blog.html" id="active">Blog</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div class="blog">
+           <h1 style="color:darkviolet; position: relative; left: 20%;"><span style="color: darkorange; text-decoration: underline">B</span>log</h1>
+            <div class="blog-main">
+            <div class="main-part" id="main">
+               <div class="cont-img" id="coimg">
+               </div>
+               <div class="cont-text">
+                 <div  class="blog-header">
+                 <span class="social-icons">
+                     
+                      <a href="https://www.facebook.com/rrqarif" target="_blank"><img src="images/Iconslogo/facebook-32.png" class="fa-facebook"></a>
+                      
+                      <a href="https://twitter.com/arif_rrq39737" target="_blank"><img src="images/Iconslogo/twitter-32.png" class="fa-twitter"></a>
+                      
+           
+                  </span>
+                  Bitcoin oleh Timoty Ronald
+                  <hr style="clear: both; height: 3px; background-color: #101010">
+                 </div>
+                   <p><b><span class="h2">Pengantar Bitcoin</span></b><br>Bitcoin adalah salah satu bentuk mata uang digital atau cryptocurrency yang diciptakan pada tahun 2009 oleh seseorang atau sekelompok orang dengan nama samaran Satoshi Nakamoto. Bitcoin memungkinkan transaksi antar pengguna tanpa perantara seperti bank atau pemerintah, membuatnya menjadi terobosan besar di dunia finansial.
+                   <span id="dots" style="font-weight: bold;">....</span><span id="more">
+                   <br><b><span class="h2">Keuntungan Bitcoin</span></b><br>Timoty Ronald, seorang analis keuangan dan pakar cryptocurrency, menjelaskan bahwa Bitcoin diciptakan untuk memberikan solusi pada masalah kepercayaan dalam transaksi digital. Dengan menggunakan teknologi blockchain, Bitcoin memungkinkan setiap transaksi dicatat dan diverifikasi oleh jaringan komputer terdistribusi, bukan oleh satu entitas tunggal.
+                   <br>Salah satu keunggulan utama Bitcoin adalah desentralisasi. Karena tidak dikendalikan oleh otoritas pusat, Bitcoin memberikan kontrol penuh kepada pemiliknya atas aset mereka. Hal ini berbeda dengan mata uang tradisional yang terpengaruh oleh kebijakan bank sentral dan pemerintah.
+                   <br><b><span class="h2">Risiko dan Kekhawatiran</span></b><br>Namun, Timoty Ronald juga mengingatkan tentang risiko yang datang dengan investasi di Bitcoin. Salah satu masalah terbesar adalah volatilitas harganya yang sangat tinggi. Nilai Bitcoin bisa meroket dalam hitungan hari, tetapi bisa jatuh drastis dalam periode yang sama.
+                   <br>Timoty juga menyoroti kekhawatiran seputar regulasi. Karena sifatnya yang anonim, Bitcoin sering kali dikaitkan dengan aktivitas ilegal, seperti pencucian uang dan perdagangan narkoba. Hal ini menyebabkan banyak negara mencoba mengatur atau bahkan melarang penggunaan Bitcoin di wilayah mereka.
+                   <br><b><span class="h2">Kesimpulan</span></b><br>Bagi Timoty Ronald, Bitcoin adalah inovasi yang luar biasa dalam dunia keuangan. Namun, ia menekankan pentingnya memahami risiko yang terkait sebelum terjun ke dunia cryptocurrency. Dengan potensi besar yang dimilikinya, Bitcoin bisa menjadi alat keuangan masa depan, asalkan digunakan dengan bijak dan hati-hati.
+                   </span></p>
+                   <button onclick="myFunction()" id="myBtn" class="btn-more">Read more</button>
+               </div>
+            </div>
+        </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2024 <a>MUHAMMAD ARIF</a></p>
+        </div>
+        <script>
+            function myFunction() {
+                var dots = document.getElementById("dots");
+                var moreText = document.getElementById("more");
+                var btnText = document.getElementById("myBtn");
+                var main = document.getElementById("main");
+                var coimg = document.getElementById("coimg");
+              if (dots.style.display === "none") {
+                  dots.style.display = "inline";
+                  btnText.innerHTML = "Read more";
+                  moreText.style.display = "none";
+                  main.style.display = "flex";
+                  coimg.style.width = "350px";
+                  
+                  
+              } else {
+                  dots.style.display = "none";
+                  btnText.innerHTML = "Read less";
+                  moreText.style.display = "inline";
+                  main.style.display = "block";
+                  coimg.style.width = "100%";
+                  coimg.style.transition = "all 1s";
+                }
+        }
+        </script>
+        <script src="js/main.js" type="text/javascript"></script>
+    </body>
+</html>
