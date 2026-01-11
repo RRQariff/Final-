@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #101010;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+fieldset {
+    border: 2px solid grey;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+}
+
+legend {
+    margin-left: 20px;
+    border: 2px solid orange;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 8px;
+    background-color: #101010;
+}
+
+.soci-contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.messenger, .email {
+    width: 200px;
+    height: 40px;
+    margin: 10px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.messenger {
+    background-color: #0084FF;
+}
+
+.email {
+    background-color: #c8232c;
+}
+
+.messenger:hover, .email:hover {
+    filter: brightness(80%);
+}
+
+.messenger img, .email img {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+}
+
+.text {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+
+.copyright {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #101010;
+    color: white;
+}
